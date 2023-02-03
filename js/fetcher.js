@@ -1,7 +1,7 @@
 
 // Replacing Images in index.html
 function productPage () {
-    fetch("http://localhost:3000/products_fetch")
+    fetch("https://vast-rose-hermit-crab-yoke.cyclic.app/products_fetch")
         .then(res => res.json())
         .then(data => {
             console.log("The products acquired data from the server response is  " , data);
@@ -30,7 +30,7 @@ function productPage () {
 
 //Fetch the carouel Images
 function loadcarousel () {
-    fetch("http://localhost:3000/carousel")
+    fetch("https://vast-rose-hermit-crab-yoke.cyclic.app/carousel")
         .then(res => res.json())
         .then(data => {
             console.log("The carousel data from the server response is  " , data);
@@ -45,7 +45,7 @@ function loadcarousel () {
 
 //Fetch the promo banner Images
 function loadPban () {
-    fetch("http://localhost:3000/promo_banner")
+    fetch("https://vast-rose-hermit-crab-yoke.cyclic.app/promo_banner")
         .then(res => res.json())
         .then(data => {
             console.log("The promo banner data from the server response is  " , data);
@@ -59,7 +59,7 @@ function loadPban () {
 
 //Displays the single banner at the lower region in the middle of the page 
 function loadBanner () {
-    fetch("http://localhost:3000/banner")
+    fetch("https://vast-rose-hermit-crab-yoke.cyclic.app/banner")
         .then(res => res.json())
         .then(data => {
             console.log("The promo banner data from the server response is  " , data);
@@ -70,7 +70,7 @@ function loadBanner () {
 
 //Fetch the Blog Images
 function loadBlog () {
-    fetch("http://localhost:3000/blog")
+    fetch("https://vast-rose-hermit-crab-yoke.cyclic.app/blog")
         .then(res => res.json())
         .then(data => {
             console.log("The carousel data from the server response is  " , data);
@@ -89,7 +89,7 @@ function loadBlog () {
       }
 
 function changeTitle (){
-  fetch("http:/localhost:3000/page-title")
+  fetch("https://vast-rose-hermit-crab-yoke.cyclic.app/page-title")
     .then(res => res.json())
     .then(data => {
       document.querySelector('title').textContent = data.title ;
