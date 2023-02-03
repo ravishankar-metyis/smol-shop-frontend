@@ -99,11 +99,12 @@ function changeTitle (){
 
 function ExecAll(){
    productPage()
-  // loadcarousel()
+   loadcarousel()
    loadPban ()
    loadBanner ()
    loadBlog ()
    changeTitle ()
 }
 
-setTimeout(ExecAll, 4500)
+ExecAll()
+//setTimeout(ExecAll, 4500)
